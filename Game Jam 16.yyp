@@ -34,6 +34,7 @@
   },
   "name":"Game Jam 16",
   "resources":[
+    {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
