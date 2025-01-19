@@ -8,3 +8,8 @@ move = true
 dir = 0 //direction sword moves
 click_x = 0 // mouse.x when click
 click_y = 0 // mouse.y when click
+
+//draw
+x_offset = 0
+y_offset = 0
+sword_dist = 12
