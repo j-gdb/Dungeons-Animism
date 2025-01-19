@@ -5,3 +5,6 @@ follow = obj_sword
 
 xTo = x
 yTo = y
+
+final_cam_X = 0
+final_cam_Y = 0
