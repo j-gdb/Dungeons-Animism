@@ -69,8 +69,7 @@ for	(var i = 0; i < op_length; i++)
 					h_pos = -1; 
 					} else if mouse_x > menu_x_pos - click_area_w && mouse_x < menu_x_pos {
 						h_pos = 1;
-					}
-			
+					}		
 			}
 			
 			process_menu();		
@@ -90,7 +89,6 @@ for	(var i = 0; i < op_length; i++)
 		draw_set_halign(fa_left);
 		draw_text_color(menu_x_pos, menu_y_pos + op_space*i, " " + str2, _c, _c, _c, _c, 1);
 	}
-	
 }
 
 draw_set_halign(fa_left);

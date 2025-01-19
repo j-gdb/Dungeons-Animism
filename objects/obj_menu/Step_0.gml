@@ -37,12 +37,10 @@ function process_menu() {
 		//Settings menu
 		case SETTINGS:
 			switch(pos) {
-
 				//Sound
 				case 0:
 					menu_level = SOUND;
 					break;
-
 				//Back
 				case 1: 
 					menu_level = MAIN; 
