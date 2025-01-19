@@ -1,3 +1,9 @@
+if (instance_exists(obj_sword)){
+	follow = obj_sword
+}
+else{
+	follow = obj_skeleton
+}
 if (follow != noone){
 	xTo = follow.x
 	yTo = follow.y
