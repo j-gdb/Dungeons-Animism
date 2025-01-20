@@ -163,6 +163,7 @@
     {"name":"inst_66EC0E6F","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_3CDDBD24","path":"rooms/room_test/room_test.yy",},
     {"name":"inst_F94E24B","path":"rooms/room_test/room_test.yy",},
+    {"name":"inst_7111CA17","path":"rooms/room_test/room_test.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -324,6 +325,7 @@
         {"$GMRInstance":"v1","%Name":"inst_66EC0E6F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66EC0E6F","objectId":{"name":"obj_wizard","path":"objects/obj_wizard/obj_wizard.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":416.0,},
         {"$GMRInstance":"v1","%Name":"inst_3CDDBD24","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3CDDBD24","objectId":{"name":"obj_soldier","path":"objects/obj_soldier/obj_soldier.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":288.0,},
         {"$GMRInstance":"v1","%Name":"inst_F94E24B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F94E24B","objectId":{"name":"obj_soldier","path":"objects/obj_soldier/obj_soldier.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":256.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7111CA17","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7111CA17","objectId":{"name":"obj_health_bar","path":"objects/obj_health_bar/obj_health_bar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":64.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

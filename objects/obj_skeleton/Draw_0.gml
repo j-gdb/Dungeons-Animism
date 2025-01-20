@@ -14,3 +14,5 @@ if (!instance_exists(obj_sword)){
 		image_xscale = 1
 		}
 }
+
+draw_text(x, y -32, global.current_hp)
