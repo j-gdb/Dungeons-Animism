@@ -12,9 +12,9 @@
 
 //move the sword towards target
 if (move == true){ 
-	if(!place_meeting(x+lengthdir_x(10, dir), y+lengthdir_y(10, dir), obj_wall_parent)){
-		x+=lengthdir_x(10,dir)
-		y+=lengthdir_y(10,dir)
+	if(!place_meeting(x+lengthdir_x(spd, dir), y+lengthdir_y(spd, dir), obj_wall_parent)){
+		x+=lengthdir_x(spd,dir)
+		y+=lengthdir_y(spd,dir)
 	}
 	//if too close to a wall, move up until the point you hit the wall. Maximum of 10 iterations run
 	else{
@@ -38,9 +38,9 @@ if (sqrt(power((x-click_x),2) + power((y-click_y),2)) < 5 and move = true){//sqr
 
 //returns the sword to the skeletin
 if (ret == true){
-	if(!place_meeting(x+lengthdir_x(10, dir), y+lengthdir_y(10, dir), obj_skeleton)){
-		x-=lengthdir_x(10,dir)
-		y-=lengthdir_y(10,dir)
+	if(!place_meeting(x+lengthdir_x(spd, dir), y+lengthdir_y(spd, dir), obj_skeleton)){
+		x-=lengthdir_x(spd,dir)
+		y-=lengthdir_y(spd,dir)
 	}
 	//counter is the number of extra pixel steps we needed to draw
 	else{
@@ -52,7 +52,7 @@ if (ret == true){
 }
 
 var enemy = instance_place(x,y,obj_enemy_parent)
-if (enemy != noone and move==true){
+if (enemy != noone and (move==true or ret == true)){
 	alarm[1] = 0
 	move = false
 	var sprite = enemy.sprite_index

@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_health_bar",
-    "path":"sprites/spr_health_bar/spr_health_bar.yy",
+    "name":"spr_sword",
+    "path":"sprites/spr_sword/spr_sword.yy",
   },
   "spriteMaskId":null,
   "visible":true,
