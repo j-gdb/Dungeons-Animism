@@ -23,6 +23,7 @@ if (move == true){
 			x+=lengthdir_x(1,dir)
 			y+=lengthdir_y(1,dir)
 		}
+		alarm[1] = 0
 		alarm[0] = 30 //adds a little pause at the end of moving
 		move = false
 	}
@@ -30,6 +31,7 @@ if (move == true){
 
 //checks within a ball of radius 5 pixels if the sword has reached where you clicked
 if (sqrt(power((x-click_x),2) + power((y-click_y),2)) < 5 and move = true){//sqrt is slow, but we can ignore it
+	alarm[1] = 0
 	alarm[0] = 30
 	move = false
 }
@@ -49,4 +51,12 @@ if (ret == true){
 	}
 }
 
-//todo: when you hit and kill and enemy, they turn into a skeleton. Original skeleton destroyed.
+var enemy = instance_place(x,y,obj_enemy_parent)
+if (enemy != noone and move==true){
+	alarm[1] = 0
+	move = false
+	instance_create_depth(enemy.x+16, enemy.y+16, 0, obj_skeleton)
+	instance_destroy(enemy)
+	instance_destroy(owner_id)
+	instance_destroy()
+}

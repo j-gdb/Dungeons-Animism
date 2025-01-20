@@ -3,4 +3,7 @@
 }*/
 //draw_sprite_ext(spr_sword,0,x,y,1,1,dir,c_aqua,0.5);
 image_angle = dir
+if (ret == true){
+	image_xscale = -1
+}
 draw_self()
