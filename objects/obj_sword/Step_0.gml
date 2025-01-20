@@ -55,7 +55,9 @@ var enemy = instance_place(x,y,obj_enemy_parent)
 if (enemy != noone and move==true){
 	alarm[1] = 0
 	move = false
-	instance_create_depth(enemy.x+16, enemy.y+16, 0, obj_skeleton)
+	var sprite = enemy.sprite_index
+	var new_player = instance_create_depth(enemy.x, enemy.y, 0, obj_skeleton)
+	new_player.sprite_index = sprite
 	instance_destroy(enemy)
 	instance_destroy(owner_id)
 	instance_destroy()

@@ -16,7 +16,7 @@ if (move == true){
 	y += ver;
 }
 //shooting the sword
-if (mouse_check_button_pressed(mb_left) and move == true){
+if (mouse_check_button_pressed(mb_left) and move == true and thro == true){
 	if (mouse_x >= 0 and mouse_x <= room_width and mouse_y >= 0 and mouse_y <= room_height){ //want them to click within the room
 		click_x = mouse_x //mouse points to pass to sword
 		click_y = mouse_y

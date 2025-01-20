@@ -8,6 +8,8 @@ move = true
 dir = 0 //direction sword moves
 click_x = 0 // mouse.x when click
 click_y = 0 // mouse.y when click
+thro = false //can't throw for first second
+alarm[0] = 30
 
 //draw
 x_offset = 0
