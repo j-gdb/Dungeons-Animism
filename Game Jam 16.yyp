@@ -34,6 +34,7 @@
   },
   "name":"Game Jam 16",
   "resources":[
+    {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
@@ -49,7 +50,11 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Health_timer","path":"scripts/Health_timer/Health_timer.yy",},},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},},
+<<<<<<< Updated upstream
     {"id":{"name":"spr_bg_tiles","path":"sprites/spr_bg_tiles/spr_bg_tiles.yy",},},
+=======
+    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"spr_enemy_parent","path":"sprites/spr_enemy_parent/spr_enemy_parent.yy",},},
     {"id":{"name":"spr_health_bar","path":"sprites/spr_health_bar/spr_health_bar.yy",},},
     {"id":{"name":"spr_skull","path":"sprites/spr_skull/spr_skull.yy",},},

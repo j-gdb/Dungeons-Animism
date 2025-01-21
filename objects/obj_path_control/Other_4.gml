@@ -1,5 +1,6 @@
 //set grid size
 #macro TILESIZE 32
+randomize()
 
 //get tiles in room
 var _w = ceil(room_width/TILESIZE);

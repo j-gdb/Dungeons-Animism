@@ -52,7 +52,7 @@ if (ret == true){
 }
 
 var enemy = instance_place(x,y,obj_enemy_parent)
-if (enemy != noone and (move==true or ret == true)){
+if (enemy != noone){// and (move==true or ret == true)){
 	alarm[1] = 0
 	move = false
 	var sprite = enemy.sprite_index

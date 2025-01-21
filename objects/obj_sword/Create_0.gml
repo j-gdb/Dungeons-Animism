@@ -1,7 +1,7 @@
 //movement
 click_x = 0
 click_y = 0
-spd = 7
+spd = 5
 //move = false
 
 //passed in from parent
