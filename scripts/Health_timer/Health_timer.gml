@@ -45,7 +45,7 @@ function draw_hp() {
 		return 19
 	} else if global.current_hp > 0 && global.current_hp <= 5  {
 		return 20
-	} else if global.current_hp == 0 && global.current_hp <= 50  {
+	} else if global.current_hp == 0  {
 		return 21
 	}
 }
