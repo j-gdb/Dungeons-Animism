@@ -50,16 +50,8 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Health_timer","path":"scripts/Health_timer/Health_timer.yy",},},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},},
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     {"id":{"name":"spr_bg_tiles","path":"sprites/spr_bg_tiles/spr_bg_tiles.yy",},},
-=======
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
->>>>>>> Stashed changes
-=======
-    {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"spr_enemy_parent","path":"sprites/spr_enemy_parent/spr_enemy_parent.yy",},},
     {"id":{"name":"spr_health_bar","path":"sprites/spr_health_bar/spr_health_bar.yy",},},
     {"id":{"name":"spr_skull","path":"sprites/spr_skull/spr_skull.yy",},},

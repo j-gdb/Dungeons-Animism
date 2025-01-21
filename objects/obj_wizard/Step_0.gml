@@ -60,9 +60,6 @@ if (seen == true){
 			angle_dir*=-1
 		}
 		state = 0
-		alarm[0] = 20
+		alarm[0] = 40
 	}
-}
-if (x < 0 or y < 0){
-	show_message("Hi")
 }
