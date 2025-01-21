@@ -3,3 +3,5 @@
 #macro SETTINGS		1
 #macro SOUND			2
 #macro TOTAL			3
+
+global.mp_grid = 0;

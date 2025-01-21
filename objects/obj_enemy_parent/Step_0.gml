@@ -19,5 +19,15 @@
 	}
 }*/
 if (seen == true){
-	move_towards_point(obj_skeleton.x, obj_skeleton.y, 2)
+	if calc_path_timer-- <= 0
+		{
+			//reset the timer
+			calc_path_timer = calc_path_delay;
+			//can a path be made to the sword
+			var _chase = mp_grid_path(global.mp_grid, path, x, y, obj_skeleton.x, obj_skeleton.y, true);
+			//start path if we can reach the player
+			if _chase {
+				path_start(path, move_spd, path_action_stop, false);
+			}
+		}
 }
