@@ -18,4 +18,9 @@ _cam_Y = clamp(_cam_Y, 0, room_height - view_height);
 final_cam_X += (_cam_X - final_cam_X) * .25;
 final_cam_Y += (_cam_Y - final_cam_Y) * .25;
 
+var shake = power(shake_value,2) * shake_power
+final_cam_X += random_range(-shake, shake)
+final_cam_Y += random_range(-shake, shake)
+
 camera_set_view_pos(view_camera[0], final_cam_X, final_cam_Y);
+camera_set_view_angle(view_camera[0], random_range(-shake, shake) * 0.5)

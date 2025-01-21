@@ -1,1 +1,1 @@
-motion_set(dir, 2)
+motion_set(dir, 5)
