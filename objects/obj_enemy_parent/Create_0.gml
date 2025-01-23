@@ -2,7 +2,7 @@
 add_angle = 3
 dir = 0
 ray_count = 5
-line_length = 250 //320
+line_length = 380 //distance they can "see"
 angle_dir = 1
 
 seen = false

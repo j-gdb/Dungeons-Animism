@@ -1,5 +1,5 @@
-view_width = 640
-view_height = 360
+view_width = 800
+view_height = 450
 
 follow = obj_skeleton
 

@@ -1,4 +1,4 @@
-if (distance_to_object(obj_skeleton) < 320 and seen == false){
+if (distance_to_object(obj_skeleton) < 400 and seen == false){
 	dir = point_direction(x,y,obj_skeleton.x, obj_skeleton.y)
 	for (var rays = 0; rays < ray_count; rays++){
 		for (var lines = 0; lines < line_length; lines+=8){
@@ -40,11 +40,11 @@ else if (seen == false){
 	}
 	else{
 		if (can_wander <= 100){
-			new_x = x+irandom_range(-300, 300)
-			new_y = y+irandom_range(-300, 300)
+			new_x = x+irandom_range(-room_width/4, room_width/4)
+			new_y = y+irandom_range(-room_height/4, room_height/4)
 			while (!place_empty(new_x, new_y, [obj_wall_parent, obj_skeleton, obj_enemy_parent])){
-				new_x = x+irandom_range(-180, 180)
-				new_y = y+irandom_range(-180, 180)
+				new_x = x+irandom_range(-room_width/4, room_width/4)
+				new_y = y+irandom_range(-room_height/4, room_height/4)
 			}
 			can_wander = 101 //let us move to wandering
 		}
