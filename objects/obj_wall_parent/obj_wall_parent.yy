@@ -32,5 +32,5 @@
     "path":"sprites/spr_wall_parent/spr_wall_parent.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
