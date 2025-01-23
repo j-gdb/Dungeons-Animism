@@ -2,4 +2,4 @@
 event_inherited();
 tele_x = 0
 tele_y = 0
-state = 1
+state = 0

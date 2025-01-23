@@ -1,4 +1,4 @@
-if (distance_to_object(obj_skeleton) < 400 and seen == false){
+if (distance_to_object(obj_skeleton) < 250 and seen == false){
 	dir = point_direction(x,y,obj_skeleton.x, obj_skeleton.y)
 	for (var rays = 0; rays < ray_count; rays++){
 		for (var lines = 0; lines < line_length; lines+=8){
@@ -10,6 +10,7 @@ if (distance_to_object(obj_skeleton) < 400 and seen == false){
 				}
 				if (instance_place(xx,yy,obj_skeleton) != noone){
 					seen = true
+					alarm[1] = 30
 					break
 				}
 			}
@@ -21,10 +22,10 @@ if (distance_to_object(obj_skeleton) < 400 and seen == false){
 if (seen == true){
 	path_end()
 	if (state == 1){ //teleport
-		tele_x = random_range(obj_skeleton.x-225, obj_skeleton.x+225)
-		tele_y = random_range(obj_skeleton.y-225, obj_skeleton.y+225)
+		tele_x = random_range(obj_skeleton.x-160, obj_skeleton.x+160)
+		tele_y = random_range(obj_skeleton.y-160, obj_skeleton.y+160)
 		if (0 < tele_x and tele_x < room_width and  0 < tele_y and tele_y < room_height){
-			if (place_empty(tele_x, tele_y, [obj_skeleton, obj_wall_parent])){
+			if (place_empty(tele_x, tele_y, [obj_skeleton, obj_wall_parent, obj_enemy_parent])){
 				x = tele_x
 				y = tele_y
 				state = 0

@@ -1,8 +1,11 @@
 if (instance_exists(obj_sword)){
 	follow = obj_sword
 }
-else{
+else if (instance_exists(obj_skeleton)){
 	follow = obj_skeleton
+}
+else{
+	follow = obj_shrine
 }
 if (follow != noone){
 	xTo = follow.x

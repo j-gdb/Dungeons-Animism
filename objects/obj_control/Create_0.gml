@@ -1,2 +1,2 @@
-health = 100
-randomize(); 
+randomize();
+global.prev_player = spr_skull

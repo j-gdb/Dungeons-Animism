@@ -38,7 +38,7 @@ if (sqrt(power((x-click_x),2) + power((y-click_y),2)) < 5 and move = true){//sqr
 
 //returns the sword to the skeletin
 if (ret == true){
-	if(!place_meeting(x+lengthdir_x(spd, dir), y+lengthdir_y(spd, dir), obj_skeleton)){
+	if(!place_meeting(x+lengthdir_x(spd, dir), y+lengthdir_y(spd, dir), obj_skeleton) && !place_meeting(x+lengthdir_x(spd, dir), y+lengthdir_y(spd, dir), obj_shrine)){
 		x-=lengthdir_x(spd,dir)
 		y-=lengthdir_y(spd,dir)
 	}
@@ -55,7 +55,7 @@ var enemy = instance_place(x,y,obj_enemy_parent)
 if (enemy != noone){// and (move==true or ret == true)){
 	alarm[1] = 0
 	move = false
-	var sprite = enemy.sprite_index //store enemy sprite
+	global.prev_player = enemy.sprite_index //store enemy sprite
 	
 	obj_camera.shake_value = 1 //screen shake
 	
@@ -72,8 +72,14 @@ if (enemy != noone){// and (move==true or ret == true)){
 	
 	//create new player and clean up
 	var new_player = instance_create_depth(enemy.x, enemy.y, 0, obj_skeleton)
-	new_player.sprite_index = sprite
+	new_player.sprite_index = global.prev_player
 	instance_destroy(enemy)
 	instance_destroy(owner_id)
+	if (global.current_hp < 50){
+		global.current_hp+=50
+	}
+	else{
+		global.current_hp = 100
+	}
 	instance_destroy()
 }

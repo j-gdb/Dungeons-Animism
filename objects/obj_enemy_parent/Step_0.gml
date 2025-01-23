@@ -1,4 +1,4 @@
-if (distance_to_object(obj_skeleton) < 400 and seen == false){
+if (distance_to_object(obj_skeleton) < 250 and seen == false){
 	dir = point_direction(x,y,obj_skeleton.x, obj_skeleton.y)
 	for (var rays = 0; rays < ray_count; rays++){
 		for (var lines = 0; lines < line_length; lines+=8){
@@ -53,6 +53,46 @@ else if (seen == false){
 			path_start(path, 1, path_action_stop, false)
 			alarm[11] = 60 //should have made it
 			can_wander = 102 //lets not do this again
+		}
+	}
+}
+/*if (place_meeting(x,y,obj_wall_parent)){
+	for (var i = 0; i < 1000; i++){
+		if (!place_meeting(x+i, y, obj_wall_parent)){
+			x+=i
+			break
+		}
+		if (!place_meeting(x-i, y, obj_wall_parent)){
+			x-=i
+			break
+		}
+		if (!place_meeting(x, y+i, obj_wall_parent)){
+			y+=i
+			break
+		}
+		if (!place_meeting(x, y-i, obj_wall_parent)){
+			y-=i
+			break
+		}
+		if (!place_meeting(x+i, y+i, obj_wall_parent)){
+			x+=i
+			y+=i
+			break
+		}
+		if (!place_meeting(x-i, y+i, obj_wall_parent)){
+			x-=i
+			y+=i
+			break
+		}
+		if (!place_meeting(x-i, y+i, obj_wall_parent)){
+			y+=i
+			x-=i
+			break
+		}
+		if (!place_meeting(x+i, y-i, obj_wall_parent)){
+			y-=i
+			x+=i
+			break
 		}
 	}
 }
