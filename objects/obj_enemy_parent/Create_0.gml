@@ -13,3 +13,8 @@ seen = false
 calc_path_timer = 0;
 move_spd = 2;
 path = path_add();
+
+//wandering
+can_wander = 0
+new_x = 1
+new_y = 1

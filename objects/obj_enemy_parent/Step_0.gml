@@ -31,3 +31,28 @@ if (seen == true){
 			}
 		}
 }
+//wandering
+else if (seen == false){
+	if (can_wander < 90){
+		if (alarm[10] <= 0){
+			alarm[10] = irandom_range(60, 300)
+		} 
+	}
+	else{
+		if (can_wander <= 100){
+			new_x = x+irandom_range(-300, 300)
+			new_y = y+irandom_range(-300, 300)
+			while (!place_empty(new_x, new_y, [obj_wall_parent, obj_skeleton, obj_enemy_parent])){
+				new_x = x+irandom_range(-180, 180)
+				new_y = y+irandom_range(-180, 180)
+			}
+			can_wander = 101 //let us move to wandering
+		}
+		if (can_wander == 101){
+			mp_grid_path(global.mp_grid, path, x, y, new_x, new_y, true);
+			path_start(path, 1, path_action_stop, false)
+			alarm[11] = 60 //should have made it
+			can_wander = 102 //lets not do this again
+		}
+	}
+}

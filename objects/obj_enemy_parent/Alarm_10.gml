@@ -1,0 +1,1 @@
+can_wander = irandom_range(0, 100);
