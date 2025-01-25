@@ -1,4 +1,4 @@
-if (distance_to_object(obj_skeleton) < 250 and seen == false){
+if (distance_to_object(obj_skeleton) < active_distance and seen == false){
 	dir = point_direction(x,y,obj_skeleton.x, obj_skeleton.y)
 	for (var rays = 0; rays < ray_count; rays++){
 		for (var lines = 0; lines < line_length; lines+=8){
@@ -10,7 +10,7 @@ if (distance_to_object(obj_skeleton) < 250 and seen == false){
 				}
 				if (instance_place(xx,yy,obj_skeleton) != noone){
 					seen = true
-					alarm[1] = 30
+					alarm[0] = 60
 					break
 				}
 			}
@@ -22,20 +22,31 @@ if (distance_to_object(obj_skeleton) < 250 and seen == false){
 if (seen == true){
 	path_end()
 	if (state == 1){ //teleport
-		tele_x = random_range(obj_skeleton.x-160, obj_skeleton.x+160)
-		tele_y = random_range(obj_skeleton.y-160, obj_skeleton.y+160)
-		if (0 < tele_x and tele_x < room_width and  0 < tele_y and tele_y < room_height){
-			if (place_empty(tele_x, tele_y, [obj_skeleton, obj_wall_parent, obj_enemy_parent])){
-				x = tele_x
-				y = tele_y
-				state = 0
-				alarm[0] = 60
+		repeat(15){
+			tele_x = random_range(x-range_teleport, x+range_teleport)
+			tele_y = random_range(y-range_teleport, y+range_teleport)
+			if (0 < tele_x and tele_x < room_width and  0 < tele_y and tele_y < room_height){
+				/*var wallthere = collision_circle(tele_x, tele_y, 32, obj_wall_parent, false, false)
+				if (wallthere == noone){
+					x = tele_x
+					y = tele_y
+					state = 0
+					alarm[0] = 60
+					break
+				}*/
+				if (place_empty(tele_x, tele_y, [obj_skeleton, obj_wall_parent, obj_enemy_parent])){
+					x = tele_x
+					y = tele_y
+					state = 0
+					alarm[0] = 60
+					break
+				}
 			}
 		}
 	}
 	else if (state == 2){ //attack
 		dir = point_direction(x,y,obj_skeleton.x, obj_skeleton.y)
-		for (var rays = 0; rays < 3; rays++){
+		for (var rays = 1; rays <= ray_count; rays++){
 			for (var lines = 0; lines < line_length; lines+=8){
 				var xx = x+lengthdir_x(lines, dir)
 				var yy = y+lengthdir_y(lines, dir)
@@ -62,7 +73,12 @@ if (seen == true){
 			angle_dir*=-1
 		}
 		state = 0
-		alarm[0] = 40
+		if (distance_to_object(obj_skeleton) < 128){
+			alarm[0] = 30
+		}
+		else{
+			alarm[0] = 60
+		}
 	}
 }
 else if (seen == false){

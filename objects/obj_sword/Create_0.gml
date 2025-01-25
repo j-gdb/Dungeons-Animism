@@ -14,7 +14,7 @@ counter = 0 //extra pixels (very negligable but it does look nice
 /*if (place_meeting(x,y,obj_wall_parent)){ //just in case, don't think this can happen
 	alarm[0] = 30
 }*/
-alarm[1] = 15
+alarm[1] = 10
 
 //particles
 particle_death = part_type_create()

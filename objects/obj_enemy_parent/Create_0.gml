@@ -1,8 +1,9 @@
 //ray casting stuff
 add_angle = 3
 dir = 0
-ray_count = 5
+ray_count = 3
 line_length = 224 //distance they can "see"
+active_distance = 300
 angle_dir = 1
 
 seen = false
