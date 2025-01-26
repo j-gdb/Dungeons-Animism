@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 state = 0
-attack = false
+attack = false //have you attacked

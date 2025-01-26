@@ -37,6 +37,7 @@
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
+    {"id":{"name":"obj_debugger","path":"objects/obj_debugger/obj_debugger.yy",},},
     {"id":{"name":"obj_dummy","path":"objects/obj_dummy/obj_dummy.yy",},},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_health_bar","path":"objects/obj_health_bar/obj_health_bar.yy",},},

@@ -19,3 +19,4 @@ path = path_add();
 can_wander = 0
 new_x = 1
 new_y = 1
+wander_distance = 64

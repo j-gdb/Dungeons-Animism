@@ -6,9 +6,11 @@ if (distance_to_object(obj_skeleton) < active_distance and seen == false){
 			var xx = x+lengthdir_x(lines, dir)
 			var yy = y+lengthdir_y(lines, dir)
 			if (position_empty(xx,yy) == false){
+				//stop rays when hitting a wall
 				if (instance_place(xx,yy,obj_wall_parent) != noone){
 					break
 				}
+				//see player
 				if (instance_place(xx,yy,obj_skeleton) != noone){
 					seen = true
 					break
@@ -17,6 +19,57 @@ if (distance_to_object(obj_skeleton) < active_distance and seen == false){
 		}
 		dir+= (add_angle * rays) * angle_dir
 		angle_dir*=-1
+	}
+}
+if (seen == true){
+	//moving into range to attack
+	if (state == 0){
+		if calc_path_timer-- <= 0 {
+			//reset the timer
+			calc_path_timer = irandom_range(10,30)//calc_path_delay;
+			//can a path be made to the sword
+			var _chase = mp_grid_path(global.mp_grid, path, x, y, obj_skeleton.x, obj_skeleton.y, true);
+			//start path if we can reach the player
+			if _chase {
+				path_start(path, move_spd, path_action_stop, false);
+			}
+		}
+		//dodge/run away ish
+		if (mouse_check_button_pressed(mb_left) and seen == true and distance_to_object(obj_skeleton) < 200){
+			calc_path_timer = irandom_range(10,30)
+			var node_id = nth_nearest(x,y,obj_node, 2) //where they move towards
+			if (node_id != noone){
+				var _chase = mp_grid_path(global.mp_grid, path, x, y, node_id.x, node_id.y, true);
+				if _chase {
+					path_start(path, move_spd+2, path_action_stop, false);
+				}
+			}
+		}
+		//got within range
+		if (distance_to_object(obj_skeleton) < 50){
+			state = 1
+			path_end()
+			//start circling
+		}
+	}
+	else if (state == 1){ //attacking
+		if (alarm[0] <= 0 and attack == false){
+			alarm[0] = irandom_range(10,30)
+		}
+		if (mouse_check_button_pressed(mb_left) and distance_to_object(obj_skeleton) < 200){
+			calc_path_timer = irandom_range(30,50)
+			var node_id = nth_nearest(x,y,obj_node, 2) //where they move towards
+			if (node_id != noone){
+				var _chase = mp_grid_path(global.mp_grid, path, x, y, node_id.x, node_id.y, true);
+				if _chase {
+					path_start(path, move_spd+2, path_action_stop, false);
+				}
+			}
+		}
+		if (distance_to_object(obj_skeleton) > 70){
+			state = 0
+		}
+		
 	}
 }
 //wandering
@@ -29,69 +82,25 @@ else if (seen == false){
 	}
 	else{
 		if (can_wander <= 100){
-			new_x = x+irandom_range(-room_width/4, room_width/4)
-			new_y = y+irandom_range(-room_height/4, room_height/4)
-			while (!place_empty(new_x, new_y, [obj_wall_parent, obj_skeleton, obj_enemy_parent])){
-				new_x = x+irandom_range(-room_width/4, room_width/4)
-				new_y = y+irandom_range(-room_height/4, room_height/4)
-			}
-			can_wander = 101 //let us move to wandering
-		}
-		if (can_wander == 101){
-			mp_grid_path(global.mp_grid, path, x, y, new_x, new_y, true);
-			path_start(path, 1, path_action_stop, false)
-			alarm[11] = 60 //should have made it
-			can_wander = 102 //lets not do this again
-		}
-	}
-}
-//path finding
-if (state == 0){
-	if (seen == true){
-		if calc_path_timer-- <= 0
-			{
-				//reset the timer
-				calc_path_timer = irandom_range(10,30)//calc_path_delay;
-				//can a path be made to the sword
-				var _chase = mp_grid_path(global.mp_grid, path, x, y, obj_skeleton.x, obj_skeleton.y, true);
-				//start path if we can reach the player
-				if _chase {
-					path_start(path, move_spd, path_action_stop, false);
+			var node = irandom_range(1, instance_number(obj_node))
+			var node_id = nth_nearest(x,y,obj_node, node)
+			repeat(15){
+				new_x = node_id.x + irandom_range(-wander_distance,wander_distance)
+				new_y = node_id.y + irandom_range(-wander_distance,wander_distance)
+				if (place_empty(new_x, new_x, [obj_wall_parent, obj_enemy_parent]) and 0 <= new_x and new_x <= room_width and 0 <= new_y and new_y <= room_height){
+					path_end()
+					var _chase = mp_grid_path(global.mp_grid, path, x, y, new_x, new_y, true);
+					if _chase{
+						path_start(path, 1, path_action_stop, false)
+					}
+					alarm[11] = 60 //should have made it to the spot
+					can_wander = 101 //lets not try to wander for now
+					break
 				}
 			}
-	}
-	//dodge/run away ish
-	if (mouse_check_button_pressed(mb_left) and seen == true and distance_to_object(obj_skeleton) < 200){
-		calc_path_timer = irandom_range(10,30)
-		var node_id = nth_nearest(x,y,obj_node, 2) //where they move towards
-		if (node_id != noone){
-			var _chase = mp_grid_path(global.mp_grid, path, x, y, node_id.x, node_id.y, true);
-			if _chase {
-				path_start(path, move_spd+2, path_action_stop, false);
-			}
 		}
-	}
-	if (distance_to_object(obj_skeleton) < 50){
-		state = 1
-		//replace this with some circling code
-		path_end()
 	}
 }
-else if (state == 1){
-	if (alarm[0] <= 0 and attack == false){
-		alarm[0] = irandom_range(10,30)
-	}
-	if (mouse_check_button_pressed(mb_left) and seen == true and distance_to_object(obj_skeleton) < 200){
-		calc_path_timer = irandom_range(30,50)
-		var node_id = nth_nearest(x,y,obj_node, 2) //where they move towards
-		if (node_id != noone){
-			var _chase = mp_grid_path(global.mp_grid, path, x, y, node_id.x, node_id.y, true);
-			if _chase {
-				path_start(path, move_spd+1, path_action_stop, false);
-			}
-		}
-	}
-	if (distance_to_object(obj_skeleton) > 50){
-		state = 0
-	}
+if (distance_to_object(obj_enemy_parent) < 10){
+	var xx = 0
 }

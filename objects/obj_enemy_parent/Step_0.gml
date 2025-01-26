@@ -42,19 +42,22 @@ else if (seen == false){
 	}
 	else{
 		if (can_wander <= 100){
-			new_x = x+irandom_range(-room_width/4, room_width/4)
-			new_y = y+irandom_range(-room_height/4, room_height/4)
-			while (!place_empty(new_x, new_y, [obj_wall_parent, obj_skeleton, obj_enemy_parent])){
-				new_x = x+irandom_range(-room_width/4, room_width/4)
-				new_y = y+irandom_range(-room_height/4, room_height/4)
+			var node = irandom_range(1, instance_number(obj_node))
+			var node_id = nth_nearest(x,y,obj_node, node)
+			repeat(15){
+				new_x = node_id.x + irandom_range(-wander_distance,wander_distance)
+				new_y = node_id.y + irandom_range(-wander_distance,wander_distance)
+				if (place_empty(new_x, new_x, [obj_wall_parent, obj_enemy_parent]) and 0 <= new_x and new_x <= room_width and 0 <= new_y and new_y <= room_height){
+					path_end()
+					var _chase = mp_grid_path(global.mp_grid, path, x, y, new_x, new_y, true);
+					if _chase{
+						path_start(path, 1, path_action_stop, false)
+					}
+					alarm[11] = 60 //should have made it to the spot
+					can_wander = 101 //lets not try to wander for now
+					break
+				}
 			}
-			can_wander = 101 //let us move to wandering
-		}
-		if (can_wander == 101){
-			mp_grid_path(global.mp_grid, path, x, y, new_x, new_y, true);
-			path_start(path, 1, path_action_stop, false)
-			alarm[11] = 60 //should have made it
-			can_wander = 102 //lets not do this again
 		}
 	}
 }
