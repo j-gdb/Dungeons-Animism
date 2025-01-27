@@ -79,7 +79,7 @@ if (seen == true){
 			if (node_id != noone){
 				var _chase = mp_grid_path(global.mp_grid, path, x, y, node_id.x, node_id.y, true);
 				if _chase {
-					path_start(path, move_spd+2, path_action_stop, true);
+					path_start(path, move_spd+1, path_action_stop, true);
 				}
 			}
 		}
@@ -103,7 +103,7 @@ if (seen == true){
 			if (node_id != noone){
 				var _chase = mp_grid_path(global.mp_grid, path, x, y, node_id.x, node_id.y, true);
 				if _chase {
-					path_start(path, move_spd+2, path_action_stop, true);
+					path_start(path, move_spd+1, path_action_stop, true);
 				}
 			}
 		}

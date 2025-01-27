@@ -12,7 +12,7 @@ if (move == true){
 			y+=lengthdir_y(1,dir)
 		}
 		alarm[1] = 0
-		alarm[0] = 15 //adds a little pause at the end of moving
+		alarm[0] = 5 //adds a little pause at the end of moving
 		move = false
 	}
 }
@@ -63,8 +63,8 @@ if (enemy != noone){// and (move==true or ret == true)){
 	new_player.sprite_index = global.prev_player
 	instance_destroy(enemy)
 	instance_destroy(owner_id)
-	if (global.current_hp < 50){
-		global.current_hp+=50
+	if (global.current_hp < 70){
+		global.current_hp+=30
 	}
 	else{
 		global.current_hp = 100

@@ -21,12 +21,12 @@ if (distance_to_object(obj_sword) < 2){
 		instance_destroy()
 		with(parent){
 			alarm[0] = 0
-			calc_path_timer = irandom_range(15,30)
+			calc_path_timer = irandom_range(10,30)
 			var node_id = nth_nearest(x,y,obj_node, 2) //where they move towards
 			if (node_id != noone){
 				var _chase = mp_grid_path(global.mp_grid, path, x, y, node_id.x, node_id.y, true);
 				if _chase {
-					path_start(path, move_spd+2, path_action_stop, true);
+					path_start(path, move_spd+1, path_action_stop, true);
 				}
 			}
 		}

@@ -1,0 +1,1 @@
+global.shard_count = 1 //non zero so doors do not destroy themselves
