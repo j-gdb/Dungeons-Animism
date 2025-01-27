@@ -1,4 +1,4 @@
-if (distance_to_object(obj_skeleton) < active_distance){// and seen == false){
+/*if (distance_to_object(obj_skeleton) < active_distance){// and seen == false){
 	dir = point_direction(x,y,obj_skeleton.x, obj_skeleton.y)
 	for (var rays = 1; rays <= ray_count; rays++){
 		for (var lines = 0; lines < line_length; lines+=8){
@@ -22,5 +22,5 @@ if (distance_to_object(obj_skeleton) < active_distance){// and seen == false){
 		dir+= (add_angle * rays) * angle_dir
 		angle_dir*=-1
 	}
-}
+}*/
 draw_self()

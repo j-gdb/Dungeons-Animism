@@ -71,6 +71,7 @@
     {"id":{"name":"spr_spear","path":"sprites/spr_spear/spr_spear.yy",},},
     {"id":{"name":"spr_sword_display","path":"sprites/spr_sword_display/spr_sword_display.yy",},},
     {"id":{"name":"spr_sword","path":"sprites/spr_sword/spr_sword.yy",},},
+    {"id":{"name":"spr_teleport_effect","path":"sprites/spr_teleport_effect/spr_teleport_effect.yy",},},
     {"id":{"name":"spr_test_enemy","path":"sprites/spr_test_enemy/spr_test_enemy.yy",},},
     {"id":{"name":"spr_wall_parent","path":"sprites/spr_wall_parent/spr_wall_parent.yy",},},
     {"id":{"name":"spr_wizard","path":"sprites/spr_wizard/spr_wizard.yy",},},

@@ -48,14 +48,15 @@ else if (seen == false){
 				new_x = node_id.x + irandom_range(-wander_distance,wander_distance)
 				new_y = node_id.y + irandom_range(-wander_distance,wander_distance)
 				if (place_empty(new_x, new_x, [obj_wall_parent, obj_enemy_parent]) and 0 <= new_x and new_x <= room_width and 0 <= new_y and new_y <= room_height){
-					path_end()
-					var _chase = mp_grid_path(global.mp_grid, path, x, y, new_x, new_y, true);
-					if _chase{
-						path_start(path, 1, path_action_stop, false)
+					if (collision_circle(new_x, new_y, 32, obj_wall_parent, false, false) == noone){
+						var _chase = mp_grid_path(global.mp_grid, path, x, y, new_x, new_y, true);
+						if _chase{
+							path_start(path, 1, path_action_stop, true)
+						}
+						alarm[11] = 60 //should have made it to the spot
+						can_wander = 101 //lets not try to wander for now
+						break
 					}
-					alarm[11] = 60 //should have made it to the spot
-					can_wander = 101 //lets not try to wander for now
-					break
 				}
 			}
 		}

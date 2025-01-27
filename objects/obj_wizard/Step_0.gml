@@ -26,15 +26,13 @@ if (seen == true){
 			tele_x = random_range(x-range_teleport, x+range_teleport)
 			tele_y = random_range(y-range_teleport, y+range_teleport)
 			if (0 < tele_x and tele_x < room_width and  0 < tele_y and tele_y < room_height){
-				/*var wallthere = collision_circle(tele_x, tele_y, 32, obj_wall_parent, false, false)
-				if (wallthere == noone){
-					x = tele_x
-					y = tele_y
-					state = 0
-					alarm[0] = 60
-					break
-				}*/
 				if (place_empty(tele_x, tele_y, [obj_skeleton, obj_wall_parent, obj_enemy_parent])){
+					var range = irandom_range(200,300)
+					for (var i = 0; i < range; i++){
+						var off_x = random_range(-32,32) //random offset
+						var off_y = random_range(-32,32)
+						part_particles_create(global.particle_system, x+off_x,y+off_y, particle_teleport, 1)
+					}
 					x = tele_x
 					y = tele_y
 					state = 0
@@ -96,19 +94,17 @@ else if (seen == false){
 				new_x = node_id.x + irandom_range(-wander_distance,wander_distance)
 				new_y = node_id.y + irandom_range(-wander_distance,wander_distance)
 				if (place_empty(new_x, new_x, [obj_wall_parent, obj_enemy_parent]) and 0 <= new_x and new_x <= room_width and 0 <= new_y and new_y <= room_height){
-					path_end()
-					var _chase = mp_grid_path(global.mp_grid, path, x, y, new_x, new_y, true);
-					if _chase{
-						path_start(path, 1, path_action_stop, false)
+					if (collision_circle(new_x, new_y, 32, obj_wall_parent, false, false) == noone){
+						var _chase = mp_grid_path(global.mp_grid, path, x, y, new_x, new_y, true);
+						if _chase{
+							path_start(path, 1, path_action_stop, true)
+						}
+						alarm[11] = 60 //should have made it to the spot
+						can_wander = 101 //lets not try to wander for now
+						break
 					}
-					alarm[11] = 60 //should have made it to the spot
-					can_wander = 101 //lets not try to wander for now
-					break
 				}
 			}
 		}
 	}
-}
-if (distance_to_object(obj_enemy_parent) < 10){
-	var xx = 0
 }
