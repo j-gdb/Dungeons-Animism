@@ -58,6 +58,7 @@
     {"id":{"name":"obj_wall_parent","path":"objects/obj_wall_parent/obj_wall_parent.yy",},},
     {"id":{"name":"obj_wizard","path":"objects/obj_wizard/obj_wizard.yy",},},
     {"id":{"name":"dsadasd","path":"rooms/dsadasd/dsadasd.yy",},},
+    {"id":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
     {"id":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Health_timer","path":"scripts/Health_timer/Health_timer.yy",},},
@@ -92,9 +93,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"dsadasd","path":"rooms/dsadasd/dsadasd.yy",},},
     {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

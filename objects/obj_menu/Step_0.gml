@@ -32,18 +32,27 @@ function process_menu() {
 				case 1:
 					menu_level =  SETTINGS; 
 					break;
+				//Exit
+				case 2:
+					game_end();
+					break;
 				}
 			break;
 		//Settings menu
 		case SETTINGS:
 			switch(pos) {
-				//Sound
+				//Back
 				case 0:
+					menu_level = MAIN; 
+					
+					break;
+				//Sound
+				case 1: 
 					menu_level = SOUND;
 					break;
-				//Back
-				case 1: 
-					menu_level = MAIN; 
+				//Video
+				case 2:
+					menu_level = VIDEO;
 					break;
 			}
 		break;
@@ -63,6 +72,21 @@ function process_menu() {
 				case 2: 
 					change_menu(h_pos, "music");
 					break;
+			}
+		break;
+		
+		//Video menu
+		case VIDEO:
+			switch(pos) {
+				//Back
+				case 0:
+					menu_level = SETTINGS;
+					break;
+				//Full Screen
+				case 1:
+				change_menu(h_pos, "screen");
+				window_set_fullscreen(SET[? "screen"][0]); 
+				break;
 			}
 		}
 	//set position back
