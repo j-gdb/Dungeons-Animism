@@ -1,0 +1,1 @@
+global.can_hit = true

@@ -16,3 +16,9 @@ if !(global.current_hp <= 30) {
 		effect_active = true;
 	}
 }
+//iframes
+if (global.can_hit == false){
+	if (alarm[0] <= 0){
+		alarm[0] = iframes
+	}
+}

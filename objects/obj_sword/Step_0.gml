@@ -1,24 +1,12 @@
-//movement
-/*if (mouse_check_button_pressed(mb_left) and move == false){
-	if (mouse_x >= 0 and mouse_x <= room_width and mouse_y >= 0 and mouse_y <= room_height){ //want them to click within the room
-		click_x = mouse_x //still use click_x and click_y to check distance
-		click_y = mouse_y
-		dir = point_direction(x,y,click_x, click_y)
-		move = true
-		alarm[0] = 30//set a limit on how long the sword can move 
-	}
-}*/
-
-
 //move the sword towards target
 if (move == true){ 
-	if(!place_meeting(x+lengthdir_x(spd, dir), y+lengthdir_y(spd, dir), obj_wall_parent)){
+	if(!place_meeting(x+lengthdir_x(spd, dir), y+lengthdir_y(spd, dir), obj_wall_parent) and !place_meeting(x+lengthdir_x(spd, dir), y+lengthdir_y(spd, dir), obj_shield)){
 		x+=lengthdir_x(spd,dir)
 		y+=lengthdir_y(spd,dir)
 	}
 	//if too close to a wall, move up until the point you hit the wall. Maximum of 10 iterations run
 	else{
-		while(!place_meeting(x+lengthdir_x(1, dir), y+lengthdir_y(1, dir), obj_wall_parent)){
+		while(!place_meeting(x+lengthdir_x(1, dir), y+lengthdir_y(1, dir), obj_wall_parent) and !place_meeting(x+lengthdir_x(1, dir), y+lengthdir_y(1, dir), obj_shield)){
 			counter++
 			x+=lengthdir_x(1,dir)
 			y+=lengthdir_y(1,dir)

@@ -27,11 +27,14 @@ if (seen == true){
 			tele_y = random_range(y-range_teleport, y+range_teleport)
 			if (0 < tele_x and tele_x < room_width and  0 < tele_y and tele_y < room_height){
 				if (place_empty(tele_x, tele_y, [obj_skeleton, obj_wall_parent, obj_enemy_parent])){
-					var range = irandom_range(200,300)
+					var range = irandom_range(20,30)
 					for (var i = 0; i < range; i++){
-						var off_x = random_range(-32,32) //random offset
-						var off_y = random_range(-32,32)
+						var off_x = random_range(-16,16) //random offset
+						var off_y = random_range(-16,16)
 						part_particles_create(global.particle_system, x+off_x,y+off_y, particle_teleport, 1)
+						var particle_dir = point_direction(x,y,tele_x,tele_y)
+						part_type_direction(particle_teleport,particle_dir, particle_dir, 0, 25)
+						part_type_speed(particle_teleport, 0.5, 2, -0.05, 0.1)
 					}
 					x = tele_x
 					y = tele_y
