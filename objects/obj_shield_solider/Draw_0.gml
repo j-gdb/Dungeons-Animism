@@ -9,4 +9,7 @@ if (attack == false){
 		draw_sprite_ext(spr_spear, 0,x+16,y,1,1,90, c_white, 1)
 	}
 }
+if (has_shard == true){
+	sprite_index = spr_test_enemy_rare
+}
 //draw_path(path,x,y,true)
