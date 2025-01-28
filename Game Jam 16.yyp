@@ -45,6 +45,7 @@
     {"id":{"name":"obj_node","path":"objects/obj_node/obj_node.yy",},},
     {"id":{"name":"obj_particle_control","path":"objects/obj_particle_control/obj_particle_control.yy",},},
     {"id":{"name":"obj_path_control","path":"objects/obj_path_control/obj_path_control.yy",},},
+    {"id":{"name":"obj_pause_menu","path":"objects/obj_pause_menu/obj_pause_menu.yy",},},
     {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},},
     {"id":{"name":"obj_shard_control","path":"objects/obj_shard_control/obj_shard_control.yy",},},
     {"id":{"name":"obj_shard_door","path":"objects/obj_shard_door/obj_shard_door.yy",},},
