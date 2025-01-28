@@ -7,3 +7,4 @@
 
 global.mp_grid = 0;
 global.paused = false;
+global.full_screen = 0;

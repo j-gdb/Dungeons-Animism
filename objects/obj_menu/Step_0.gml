@@ -80,6 +80,7 @@ function process_menu() {
 			switch(pos) {
 				//Back
 				case 0:
+					global.full_screen = SET[? "screen"][0];
 					menu_level = SETTINGS;
 					break;
 				//Full Screen

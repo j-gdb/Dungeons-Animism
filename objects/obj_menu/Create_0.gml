@@ -18,7 +18,7 @@ global.dsm_settings = ds_map_create();
 
 ds_map_add(SET, "sfx", [5, [0, 10]]);
 ds_map_add(SET, "music", [5, [0, 10]]);
-ds_map_add(SET, "screen", [0, ["Off", "On"]]);
+ds_map_add(SET, "screen", [global.full_screen, ["Off", "On"]]);
 
 //Starting menu
 option[MAIN, 0] = "Play";

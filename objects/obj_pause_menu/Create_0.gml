@@ -10,15 +10,15 @@ op_length = 0;
 //Current menu
 menu_level = 0;
 //Variables for mouse control
-menu_x_pos = camera_get_view_width(view_camera[0]) * .5;       //X position for the menu
-menu_y_pos = camera_get_view_height(view_camera[0]) * .6;     //Y position for the menu
+menu_x_pos = camera_get_view_x(view_camera[0]) + (camera_get_view_width(view_camera[0]) * .5);       //X position for the menu
+menu_y_pos = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) * .6;     //Y position for the menu
 click_area_w = 20;								 //width of the area we can click to change values
 
 global.dsm_settings = ds_map_create();
 
 ds_map_add(SET, "sfx", [5, [0, 10]]);
 ds_map_add(SET, "music", [5, [0, 10]]);
-ds_map_add(SET, "screen", [0, ["Off", "On"]]);
+ds_map_add(SET, "screen", [global.full_screen, ["Off", "On"]]);
 
 //Starting menu
 option[MAIN, 0] = "Continue";
