@@ -69,6 +69,8 @@
     {"id":{"name":"spr_bg_tiles","path":"sprites/spr_bg_tiles/spr_bg_tiles.yy",},},
     {"id":{"name":"spr_bullet_trail","path":"sprites/spr_bullet_trail/spr_bullet_trail.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
+    {"id":{"name":"spr_cursor1","path":"sprites/spr_cursor1/spr_cursor1.yy",},},
+    {"id":{"name":"spr_cursor2","path":"sprites/spr_cursor2/spr_cursor2.yy",},},
     {"id":{"name":"spr_effect","path":"sprites/spr_effect/spr_effect.yy",},},
     {"id":{"name":"spr_enemy_parent","path":"sprites/spr_enemy_parent/spr_enemy_parent.yy",},},
     {"id":{"name":"spr_health_bar","path":"sprites/spr_health_bar/spr_health_bar.yy",},},

@@ -29,5 +29,11 @@ if global.paused == false {
 			move = false
 		}
 	}
+	if (distance_to_point(mouse_x, mouse_y) <= 150){
+		cursor_sprite = spr_cursor1
+	}
+	else{
+		cursor_sprite = spr_cursor2
+	}
 }
 	
