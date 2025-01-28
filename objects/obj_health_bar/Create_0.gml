@@ -7,3 +7,5 @@ time_source_start(hp_timer);
 effect_active = false;
 iframes = 45
 global.can_hit = true
+delay = 0;
+delay_timer = 2;

@@ -1,6 +1,8 @@
 image_angle = angle
-x+=lengthdir_x(5,angle)
-y+=lengthdir_y(5,angle)
+if global.paused == false {
+	x+=lengthdir_x(5,angle)
+	y+=lengthdir_y(5,angle)
+}
 
 /*var _owner = instance_nearest(x, y, obj_soldier);
 

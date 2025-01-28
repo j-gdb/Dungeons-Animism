@@ -6,3 +6,4 @@
 #macro TOTAL			4
 
 global.mp_grid = 0;
+global.paused = false;
