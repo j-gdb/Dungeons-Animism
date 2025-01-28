@@ -60,10 +60,10 @@ if (enemy != noone){// and (move==true or ret == true)){
 	
 	//create new player and clean up
 	var new_player = instance_create_depth(enemy.x, enemy.y, 0, obj_skeleton)
-	if (global.prev_player == spr_test_enemy){
+	if (global.prev_player == spr_test_enemy or global.prev_player == spr_test_enemy_rare){
 		global.prev_player = spr_test_enemy_player
 	}
-	else if (global.prev_player == spr_wizard){
+	else if (global.prev_player == spr_wizard or global.prev_player == spr_wizard_rare){
 		global.prev_player = spr_wizard_player
 	}
 	new_player.sprite_index = global.prev_player
