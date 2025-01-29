@@ -36,4 +36,7 @@ if global.paused == false {
 		cursor_sprite = spr_cursor2
 	}
 }
-	
+
+if (!instance_exists(obj_camera)){
+	instance_create_depth(x,y,depth,obj_camera)
+}

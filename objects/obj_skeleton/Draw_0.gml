@@ -1,4 +1,5 @@
 draw_self()
+sprite_index = global.prev_player
 if (!instance_exists(obj_sword)){
 	if global.paused == false {
 		dir = point_direction(x,y,mouse_x,mouse_y)
@@ -19,4 +20,4 @@ if (!instance_exists(obj_sword)){
 		}
 }
 
-draw_text(x, y -32, global.current_hp)
+//draw_text(x, y -32, global.current_hp)

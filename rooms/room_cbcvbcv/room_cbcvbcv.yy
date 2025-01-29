@@ -55,6 +55,7 @@
     {"name":"inst_22B7D677","path":"rooms/room_cbcvbcv/room_cbcvbcv.yy",},
     {"name":"inst_7C94EFF","path":"rooms/room_cbcvbcv/room_cbcvbcv.yy",},
     {"name":"inst_8013149","path":"rooms/room_cbcvbcv/room_cbcvbcv.yy",},
+    {"name":"inst_100AE8","path":"rooms/room_cbcvbcv/room_cbcvbcv.yy",},
   ],
   "isDnd":false,
   "layers":[

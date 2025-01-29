@@ -1,0 +1,1 @@
+time_source_stop(hp_timer);

@@ -69,8 +69,8 @@ if (enemy != noone){// and (move==true or ret == true)){
 	new_player.sprite_index = global.prev_player
 	instance_destroy(enemy)
 	instance_destroy(owner_id)
-	if (global.current_hp < 70){
-		global.current_hp+=30
+	if (global.current_hp < 60){
+		global.current_hp+=40
 	}
 	else{
 		global.current_hp = 100
