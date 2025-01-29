@@ -28,3 +28,6 @@ setup = false;
 //Effects
 scr_set_defaults_for_text();
 last_free_space = 0;
+
+//text_x_offset[0] = 0
+//text_y_offset[0] = 0

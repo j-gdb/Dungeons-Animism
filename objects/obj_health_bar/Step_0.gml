@@ -36,3 +36,7 @@ if  pause_key && global.paused == true && delay <= 0  {
 if delay > 0 {
 	delay--;
 }
+if (global.current_hp <= 0){
+	instance_destroy(obj_skeleton)
+	global.prev_room = room
+}
