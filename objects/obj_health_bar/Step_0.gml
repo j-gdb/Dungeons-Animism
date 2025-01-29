@@ -4,7 +4,7 @@ if global.current_hp <= 0
 	global.current_hp = 0;
 	time_source_stop(hp_timer);
 } else {
-	if global.paused == false {
+	if global.paused == false && global.current_hp > 0 {
 		time_source_start(hp_timer)
 	}
 }
@@ -32,6 +32,9 @@ if  pause_key && global.paused == true && delay <= 0  {
 } else if pause_key && global.paused == false && delay <= 0  {
 	time_source_stop(hp_timer);
 	delay = delay_timer;
+}
+if global.paused == true && instance_exists(obj_text_box) {
+	time_source_stop(hp_timer);
 }
 if delay > 0 {
 	delay--;

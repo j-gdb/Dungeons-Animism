@@ -24,6 +24,8 @@ draw_char = 0;
 text_spd = .6;
 
 setup = false;
+delay = 0
+delay_timer = 20;
 
 //Effects
 scr_set_defaults_for_text();

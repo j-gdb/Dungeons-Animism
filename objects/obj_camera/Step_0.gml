@@ -1,4 +1,3 @@
-if (global.paused == false){
 	if room != (room_init || Room1) { 
 		if (instance_exists(obj_sword)){
 			follow = obj_sword
@@ -30,4 +29,3 @@ if (global.paused == false){
 		camera_set_view_pos(view_camera[0], final_cam_X, final_cam_Y);
 		camera_set_view_angle(view_camera[0], random_range(-shake, shake) * 0.5)
 	}
-}
