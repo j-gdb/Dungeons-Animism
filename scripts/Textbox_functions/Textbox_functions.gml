@@ -37,7 +37,7 @@ function scr_game_text( _text_id )
 				case "First room" :
 				scr_text("These adventurers have entered your dungeon. It is time for you to escape.");
 				scr_text("In the top left is your health bar. It will drain over time, but you will recover health when you kill an enemy.");
-				scr_text("Kill them and possess them. Make your escape now.");
+				scr_text("Kill them and possess them. Make your escape now");
 				break;
 				
 				case "Shards" :
