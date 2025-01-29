@@ -1,0 +1,1 @@
+layer_enable_fx("Effect_1", false);
