@@ -87,6 +87,7 @@
     {"name":"inst_6A4FCCB3","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
     {"name":"inst_5DC883D8","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
     {"name":"inst_70B41CC4","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
+    {"name":"inst_390B41F2","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -178,6 +179,7 @@
         {"$GMRInstance":"v1","%Name":"inst_6A4FCCB3","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A4FCCB3","objectId":{"name":"obj_shield_solider","path":"objects/obj_shield_solider/obj_shield_solider.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":576.0,},
         {"$GMRInstance":"v1","%Name":"inst_5DC883D8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5DC883D8","objectId":{"name":"obj_shard_door","path":"objects/obj_shard_door/obj_shard_door.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":608.0,},
         {"$GMRInstance":"v1","%Name":"inst_70B41CC4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_70B41CC4","objectId":{"name":"obj_shard_door","path":"objects/obj_shard_door/obj_shard_door.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":608.0,},
+        {"$GMRInstance":"v1","%Name":"inst_390B41F2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_390B41F2","objectId":{"name":"obj_wall_parent","path":"objects/obj_wall_parent/obj_wall_parent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1120.0,"y":640.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -18,0,4,45,19,13,49,-13,0,-5,-2147483648,-18,0,4,45,19,13,49,-13,0,-5,-2147483648,-18,0,4,45,19,13,49,
@@ -201,10 +203,8 @@
           -2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_bg","path":"tilesets/ts_bg/ts_bg.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          -19,-2147483648,-2,12,-243,-2147483648,1,12,-39,-2147483648,1,12,-62,-2147483648,-2,12,-10,-2147483648,
-          -2,12,-10,-2147483648,-2,12,-14,-2147483648,2,19,13,-38,-2147483648,2,19,13,-38,-2147483648,2,19,13,
-          -38,-2147483648,2,19,13,-38,-2147483648,2,19,13,-38,-2147483648,-2,12,-10,-2147483648,-2,12,-10,-2147483648,
-          -2,12,-287,-2147483648,
+          -19,9,-2,12,-243,9,1,12,-39,9,1,12,-62,9,-2,12,-10,9,-2,12,-10,9,-2,12,-14,9,2,19,13,-38,9,2,19,13,-38,
+          9,2,19,13,-38,9,2,19,13,-38,9,2,19,13,-38,9,-2,12,-10,9,-2,12,-10,9,-2,12,-287,9,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_bg","path":"tilesets/ts_bg/ts_bg.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
