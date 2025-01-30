@@ -125,6 +125,7 @@
     {"id":{"name":"spr_test_enemy_rare","path":"sprites/spr_test_enemy_rare/spr_test_enemy_rare.yy",},},
     {"id":{"name":"spr_test_enemy","path":"sprites/spr_test_enemy/spr_test_enemy.yy",},},
     {"id":{"name":"spr_text_box","path":"sprites/spr_text_box/spr_text_box.yy",},},
+    {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},},
     {"id":{"name":"spr_wall_parent","path":"sprites/spr_wall_parent/spr_wall_parent.yy",},},
     {"id":{"name":"spr_wizard_player","path":"sprites/spr_wizard_player/spr_wizard_player.yy",},},
     {"id":{"name":"spr_wizard_rare","path":"sprites/spr_wizard_rare/spr_wizard_rare.yy",},},
