@@ -29,8 +29,8 @@ if global.paused == false {
 				if (distance_to_object(obj_skeleton) >= 70){
 					var found = false //did we find a path
 					repeat(15){
-						new_x = obj_skeleton.x + 64*irandom_range(-1,1)
-						new_y = obj_skeleton.y + 64*irandom_range(-1,1)
+						new_x = obj_skeleton.x + 16*irandom_range(-1,1)
+						new_y = obj_skeleton.y + 16*irandom_range(-1,1)
 						if (place_empty(new_x, new_x, [obj_wall_parent, obj_enemy_parent]) and 0 <= new_x and new_x <= room_width and 0 <= new_y and new_y <= room_height){
 							if (collision_circle(new_x, new_y, 32, obj_wall_parent, false, false) == noone){
 								var _chase = mp_grid_path(global.mp_grid, path, x, y, new_x, new_y, true);
@@ -62,16 +62,6 @@ if global.paused == false {
 						path_start(path, move_spd, path_action_stop, true);
 					}
 				}
-				/*
-				//reset the timer
-				calc_path_timer = irandom_range(10,30)//calc_path_delay;
-				//can a path be made to the sword
-				var _chase = mp_grid_path(global.mp_grid, path, x, y, obj_skeleton.x, obj_skeleton.y, true);
-				//start path if we can reach the player
-				if _chase {
-					path_start(path, move_spd, path_action_stop, true);
-				}
-				*/
 			}
 			//dodge/run away ish
 			if (mouse_check_button_pressed(mb_left) and seen == true and distance_to_object(obj_skeleton) < 200){

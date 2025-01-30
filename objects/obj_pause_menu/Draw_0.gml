@@ -1,3 +1,4 @@
+draw_set_font(fnt_text)
 for	(var i = 0; i < op_length; i++)
 {
 	//reset color

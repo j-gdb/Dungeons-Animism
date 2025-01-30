@@ -75,5 +75,6 @@ if (enemy != noone){// and (move==true or ret == true)){
 	else{
 		global.current_hp = 100
 	}
+	audio_play_sound(snd_enemy_die, 10, false)
 	instance_destroy()
 }

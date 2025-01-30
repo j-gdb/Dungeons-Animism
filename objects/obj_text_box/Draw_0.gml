@@ -1,3 +1,4 @@
+draw_set_font(fnt_textbox)
 if delay <= 0 {
 	key_accept = keyboard_check_pressed(vk_space);
 	click = mouse_check_button_pressed(mb_left);

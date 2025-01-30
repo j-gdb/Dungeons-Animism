@@ -1,3 +1,4 @@
+draw_set_font(fnt_text)
 //Border between the options and the edge of the text box
 op_border = 16;
 //Space between the options

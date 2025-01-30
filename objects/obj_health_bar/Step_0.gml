@@ -82,6 +82,7 @@ if (global.current_hp <= 0 and global.paused == false){
 			}
 		}
 	}
+	audio_play_sound(snd_player_death, 10, false)
 	instance_create_depth(x,y,-1,obj_transition)
 	global.current_hp = 100
 }

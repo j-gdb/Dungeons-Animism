@@ -19,6 +19,7 @@ if (distance_to_object(obj_sword) < 2){
 	parent.stop = true
 	if (obj_sword.ret == true){
 		instance_destroy()
+		audio_play_sound(snd_shield_break, 10, false)
 		with(parent){
 			alarm[0] = 0
 			calc_path_timer = irandom_range(10,30)

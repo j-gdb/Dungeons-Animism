@@ -27,6 +27,7 @@ if global.paused == false {
 			sword.dir = point_direction(x,y,click_x, click_y)
 			sword.owner_id = id //allows the sword returning to reactivate the skeleton
 			move = false
+			audio_play_sound(snd_sword_woosh, 1, false)
 		}
 	}
 	if (distance_to_point(mouse_x, mouse_y) <= 150){

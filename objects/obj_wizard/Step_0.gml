@@ -36,6 +36,8 @@ if global.paused == false {
 							var particle_dir = point_direction(x,y,tele_x,tele_y)
 							part_type_direction(particle_teleport,particle_dir, particle_dir, 0, 25)
 							part_type_speed(particle_teleport, 0.5, 2, -0.05, 0.1)
+							audio_sound_gain(snd_teleport, 0.3, 0)
+							audio_play_sound(snd_teleport, 20, false)
 						}
 						x = tele_x
 						y = tele_y
@@ -57,6 +59,7 @@ if global.paused == false {
 							break
 						}
 						if (instance_place(xx,yy,obj_skeleton) != noone){
+							audio_play_sound(snd_wizard_shoot, 20, false)
 							//shoot only if you can see
 							var bullet_1 = instance_create_depth(x,y,depth,obj_bullet)
 							bullet_1.dir = dir
