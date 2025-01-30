@@ -42,7 +42,12 @@ if global.paused == false {
 						x = tele_x
 						y = tele_y
 						state = 0
-						alarm[0] = 60
+						if (distance_to_object(obj_skeleton) < 128){
+							alarm[0] = 30
+						}
+						else{
+							alarm[0] = 60
+						}
 						break
 					}
 				}

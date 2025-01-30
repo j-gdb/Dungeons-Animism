@@ -9,3 +9,5 @@ iframes = 45
 global.can_hit = true
 delay = 0;
 delay_timer = 2;
+
+depth = -10

@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":{
-    "name":"spr_skull",
-    "path":"sprites/spr_skull/spr_skull.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

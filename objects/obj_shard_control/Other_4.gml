@@ -16,3 +16,12 @@ else if (room == room_dungeon_3){
 else if (room == room_dungeon_5){
 	global.shard_count = 2
 }
+else if (room == room_dungeon_6){
+	global.shard_count = 4
+}
+else if (room == room_dungeon_7){
+	global.shard_count = 7
+}
+else if (room == room_dungeon_8){
+	global.shard_count = 6
+}
