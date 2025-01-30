@@ -3,6 +3,11 @@ event_inherited();
 if (attack == false){
 	if (seen == true){
 		var spr_dir = point_direction(x,y,obj_skeleton.x, obj_skeleton.y)
+		if spr_dir > 90 && spr_dir < 270 {
+			image_xscale = -1;
+		} else {
+			image_xscale = 1;
+		}
 		draw_sprite_ext(spr_spear, 0,x,y,1,1,spr_dir, c_white, 1)
 	}
 	else{
