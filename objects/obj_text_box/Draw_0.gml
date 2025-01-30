@@ -85,11 +85,22 @@ if delay <= 0 {
 		}
 
 	//typing the text
-	if draw_char < text_lenght[page]
-		{
-			draw_char += text_spd;
-			draw_char = clamp(draw_char, 0, text_lenght[page]);
-		}
+	if text_pause_timer <= 0
+	{
+		if draw_char < text_lenght[page]
+			{
+				draw_char += text_spd;
+				draw_char = clamp(draw_char, 0, text_lenght[page]);
+				var _check_char = string_char_at(text[page], draw_char);
+				if _check_char == "." {
+					text_pause_timer = text_pause;
+				} else if _check_char == "," {
+					text_pause_timer = text_pause/2;
+				}
+			}
+	} else {
+		text_pause_timer--;
+	}
 	
 	//------------------flip through pages------------------//
 	if key_accept || click
@@ -130,7 +141,7 @@ if delay <= 0 {
 		for (var c = 0; c < draw_char; ++c) 
 			{
 			    //The text
-				draw_text( char_x[ c, page], char_y[ c, page], char[ c, page]);
+				draw_text_color( char_x[ c, page], char_y[ c, page], char[ c, page], col[c, page], col[c, page], col[c, page], col[c, page], 1);
 			}
 		
 

@@ -27,6 +27,7 @@ function process_menu() {
 				//Continue
 				case 0:
 					global.paused = false;
+					audio_resume_sound(snd_ost);
 					instance_destroy();
 					break;
 				//Settings

@@ -47,10 +47,10 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -54,-2147483648,2,0,-2147483648,-5,0,-33,-2147483648,1,0,-5,-2147483648,-20,0,-7,-2147483648,9,17,37,
-          38,39,37,38,39,38,40,-31,-2147483648,1,17,-6,-2147483648,26,0,37,38,39,37,38,39,37,38,39,37,38,39,37,
-          38,39,37,38,39,37,38,39,37,38,39,37,-7,-2147483648,1,17,-6,-2147483648,1,0,-32,-2147483648,2,17,-2147483648,
-          -9,0,-4,-2147483648,2,0,-2147483648,-8,0,-8,-2147483648,-7,0,1,17,-7,0,25,5,55,56,57,55,56,57,55,55,
-          56,57,55,56,57,55,56,57,55,56,57,55,56,57,55,55,-7,0,1,54,-7,55,1,58,-294,0,-290,-2147483648,
+          38,25,25,38,24,39,40,-31,-2147483648,1,17,-6,-2147483648,2,0,23,-8,24,-3,25,-3,24,1,25,-6,24,3,25,24,
+          24,-7,-2147483648,1,17,-6,-2147483648,1,0,-32,-2147483648,2,17,-2147483648,-9,0,-4,-2147483648,2,0,-2147483648,
+          -8,0,-8,-2147483648,-7,0,1,17,-7,0,25,5,55,56,57,55,56,57,55,55,56,57,55,56,57,55,56,57,55,56,57,55,
+          56,57,55,55,-7,0,1,54,-7,55,1,58,-294,0,-290,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"ts_bg","path":"tilesets/ts_bg/ts_bg.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -128,-2147483648,1,1,-5,2,1,4,-33,-2147483648,1,1,-5,2,1,4,-7,2,1,3,-15,2,1,4,-9,-2147483648,1,19,-6,

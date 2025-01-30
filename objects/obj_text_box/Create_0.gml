@@ -21,7 +21,7 @@ char_x[ 0, 0 ] = 0;
 char_y[ 0, 0 ] = 0;
 
 draw_char = 0;
-text_spd = .6;
+text_spd = .5;
 
 setup = false;
 delay = 0
@@ -30,6 +30,9 @@ delay_timer = 20;
 //Effects
 scr_set_defaults_for_text();
 last_free_space = 0;
+
+text_pause = 6;
+text_pause_timer = 0;
 
 //text_x_offset[0] = 0
 //text_y_offset[0] = 0
