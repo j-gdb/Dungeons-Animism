@@ -2,8 +2,8 @@
   "$GMSound":"",
   "%Name":"snd_shield_break",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"ag_sound",
+    "path":"audiogroups/ag_sound",
   },
   "bitDepth":1,
   "bitRate":512,

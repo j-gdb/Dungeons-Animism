@@ -63,14 +63,18 @@ function process_menu() {
 				//Back
 				case 0: 
 					menu_level = SETTINGS; 
+					global.sound = SET[? "sfx"][0];
+					global.music = SET[? "music"][0];
 					break;
 				//SFX
 				case 1: 
 					change_menu(h_pos, "sfx"); 
+					audio_group_set_gain(ag_sound, SET[? "sfx"][0]/10, 0);
 					break;
 				//Music
 				case 2: 
 					change_menu(h_pos, "music");
+					audio_group_set_gain(audiogroup_default, SET[? "music"][0]/10, 0);
 					break;
 			}
 		break;

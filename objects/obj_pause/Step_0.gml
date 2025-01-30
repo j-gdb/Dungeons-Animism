@@ -8,6 +8,8 @@ if room != Room1 and !instance_exists(obj_text_box){
 	} else if pause_key && global.paused == true {
 		global.paused = false;
 		global.full_screen = SET[? "screen"][0];
+		global.sound = SET[? "sfx"][0];
+		global.music = SET[? "music"][0];
 		instance_destroy(obj_pause_menu);
 		audio_resume_sound(snd_ost);
 	}

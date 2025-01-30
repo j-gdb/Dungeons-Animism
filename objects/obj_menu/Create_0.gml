@@ -17,8 +17,8 @@ click_area_w = 20;								 //width of the area we can click to change values
 
 global.dsm_settings = ds_map_create();
 
-ds_map_add(SET, "sfx", [5, [0, 10]]);
-ds_map_add(SET, "music", [5, [0, 10]]);
+ds_map_add(SET, "sfx", [global.sound, [0, 10]]);
+ds_map_add(SET, "music", [global.music, [0, 10]]);
 ds_map_add(SET, "screen", [global.full_screen, ["Off", "On"]]);
 
 //Starting menu
