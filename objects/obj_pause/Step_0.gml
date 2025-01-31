@@ -14,3 +14,12 @@ if room != Room1 and !instance_exists(obj_text_box){
 		audio_resume_sound(snd_ost);
 	}
 }
+
+if ( browser_width != bw || browser_height != bh )
+	{
+		bw = browser_width;
+		bh = browser_height;
+		window_set_size(bw, bh);
+		window_center();
+	}
+	

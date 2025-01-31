@@ -89,6 +89,7 @@
     {"id":{"name":"room_tutorial_5","path":"rooms/room_tutorial_5/room_tutorial_5.yy",},},
     {"id":{"name":"room_win","path":"rooms/room_win/room_win.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Focus_window","path":"scripts/Focus_window/Focus_window.yy",},},
     {"id":{"name":"Health_timer","path":"scripts/Health_timer/Health_timer.yy",},},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},},
     {"id":{"name":"nth_nearest","path":"scripts/nth_nearest/nth_nearest.yy",},},

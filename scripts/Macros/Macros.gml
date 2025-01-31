@@ -17,4 +17,5 @@ ds_map_add(SET, "music", [global.music, [0, 10]]);
 
 audio_group_set_gain(ag_sound, SET[? "sfx"][0]/10, 0);
 audio_group_load(ag_sound);
+audio_group_load(audiogroup_default);
 audio_group_set_gain(audiogroup_default, SET[? "music"][0]/10, 0);

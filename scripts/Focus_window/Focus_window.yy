@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Focus_window",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Focus_window",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

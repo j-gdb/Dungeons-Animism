@@ -2,12 +2,7 @@ pause_key = keyboard_check_pressed(ord("P"));
 if global.current_hp <= 0
 {
 	global.current_hp = 0;
-	time_source_stop(hp_timer);
-} else {
-	if global.paused == false && global.current_hp > 0 {
-		time_source_start(hp_timer)
-	}
-}
+} 
 if !(global.current_hp <= 30) {
 	if effect_active == true {
 		layer_enable_fx("Effect_1", false);
@@ -25,16 +20,13 @@ if (global.can_hit == false){
 		alarm[0] = iframes
 	}
 }
-
-if  pause_key && global.paused == true && delay <= 0  {
+if  global.paused == false {
 	time_source_resume(hp_timer);
-	delay = delay_timer;
-} else if pause_key && global.paused == false && delay <= 0  {
-	time_source_stop(hp_timer);
-	delay = delay_timer;
-}
+}else {
+	time_source_pause(hp_timer);
+} 
 if global.paused == true && instance_exists(obj_text_box) {
-	time_source_stop(hp_timer);
+	time_source_pause(hp_timer);
 }
 if delay > 0 {
 	delay--;
