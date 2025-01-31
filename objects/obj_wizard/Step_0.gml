@@ -27,7 +27,8 @@ if global.paused == false {
 				tele_x = random_range(x-range_teleport, x+range_teleport)
 				tele_y = random_range(y-range_teleport, y+range_teleport)
 				if (0 < tele_x and tele_x < room_width and  0 < tele_y and tele_y < room_height){
-					if (place_empty(tele_x, tele_y, [obj_skeleton, obj_wall_parent, obj_enemy_parent])){
+					if (collision_circle(tele_x, tele_y, 32, [obj_skeleton, obj_wall_parent, obj_enemy_parent], false, false) == noone){
+					//if (place_empty(tele_x, tele_y, [obj_skeleton, obj_wall_parent, obj_enemy_parent])){
 						var range = irandom_range(20,30)
 						for (var i = 0; i < range; i++){
 							var off_x = random_range(-16,16) //random offset
@@ -99,7 +100,7 @@ if global.paused == false {
 			} 
 		}
 		else{
-			if (can_wander <= 100){
+			if (can_wander <= 100 and instance_exists(obj_node)){
 				var node = irandom_range(1, instance_number(obj_node))
 				var node_id = nth_nearest(x,y,obj_node, node)
 				repeat(15){

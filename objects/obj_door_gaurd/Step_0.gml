@@ -104,7 +104,6 @@ if global.paused == false {
 			
 		}
 	}
-	//wandering
 } else {
 	path_end();
 }

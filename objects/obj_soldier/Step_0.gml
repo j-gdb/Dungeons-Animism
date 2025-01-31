@@ -123,7 +123,7 @@ if global.paused == false {
 			} 
 		}
 		else{
-			if (can_wander <= 100){
+			if (can_wander <= 100 and instance_exists(obj_node)){
 				var node = irandom_range(1, instance_number(obj_node))
 				var node_id = nth_nearest(x,y,obj_node, node)
 				repeat(15){
