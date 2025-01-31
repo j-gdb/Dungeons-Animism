@@ -24,7 +24,7 @@ ds_map_add(SET, "screen", [global.full_screen, ["Off", "On"]]);
 //Starting menu
 option[MAIN, 0] = "Play";
 option[MAIN, 1] = "Settings";
-option[MAIN, 2] = "Exit";
+//option[MAIN, 2] = "Exit";
 
 //Settings menu
 option[SETTINGS, 0] = "Back"
