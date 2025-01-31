@@ -26,8 +26,6 @@
     {"name":"inst_84D432C","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
     {"name":"inst_75B8566D","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
     {"name":"inst_5334469A","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
-    {"name":"inst_7C768A06","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
-    {"name":"inst_5617DEAE","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
     {"name":"inst_28C14BF3","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
     {"name":"inst_70D742C0","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
     {"name":"inst_27697E1A","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
@@ -82,6 +80,8 @@
     {"name":"inst_23062FC1","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
     {"name":"inst_1C7AC86D","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
     {"name":"inst_1D67639C","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
+    {"name":"inst_5617DEAE","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
+    {"name":"inst_7C768A06","path":"rooms/room_dungeon_6/room_dungeon_6.yy",},
   ],
   "isDnd":false,
   "layers":[

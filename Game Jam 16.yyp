@@ -132,6 +132,7 @@
     {"id":{"name":"spr_wizard_player","path":"sprites/spr_wizard_player/spr_wizard_player.yy",},},
     {"id":{"name":"spr_wizard_rare","path":"sprites/spr_wizard_rare/spr_wizard_rare.yy",},},
     {"id":{"name":"spr_wizard","path":"sprites/spr_wizard/spr_wizard.yy",},},
+    {"id":{"name":"Sprite30","path":"sprites/Sprite30/Sprite30.yy",},},
     {"id":{"name":"ts_bg","path":"tilesets/ts_bg/ts_bg.yy",},},
   ],
   "resourceType":"GMProject",

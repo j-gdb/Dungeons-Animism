@@ -92,8 +92,7 @@ for	(var i = 0; i < op_length; i++)
 	}
 }
 
-draw_set_font(fnt_win)
-draw_text(menu_x_pos, menu_y_pos - 260, "Congratulations, you've won!")
+draw_sprite(Sprite30, 0, menu_x_pos - 240, menu_y_pos - 260)
 
 draw_set_font(fnt_text)
 draw_set_halign(fa_left);

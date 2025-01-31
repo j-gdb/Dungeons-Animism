@@ -21,8 +21,6 @@
     {"name":"inst_72B1D457","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
     {"name":"inst_A7B11B5","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
     {"name":"inst_121D9576","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
-    {"name":"inst_73A30E2A","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
-    {"name":"inst_5D7E3065","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
     {"name":"inst_63731482","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
     {"name":"inst_22FD835C","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
     {"name":"inst_2A3487F3","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
@@ -88,6 +86,8 @@
     {"name":"inst_5DC883D8","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
     {"name":"inst_70B41CC4","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
     {"name":"inst_390B41F2","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
+    {"name":"inst_73A30E2A","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
+    {"name":"inst_5D7E3065","path":"rooms/room_tutorial_4/room_tutorial_4.yy",},
   ],
   "isDnd":false,
   "layers":[

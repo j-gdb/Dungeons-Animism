@@ -67,9 +67,9 @@
     {"name":"inst_46CECED","path":"rooms/room_dungeon_3/room_dungeon_3.yy",},
     {"name":"inst_2BDD656C","path":"rooms/room_dungeon_3/room_dungeon_3.yy",},
     {"name":"inst_7755D3B4","path":"rooms/room_dungeon_3/room_dungeon_3.yy",},
-    {"name":"inst_925EC72","path":"rooms/room_dungeon_3/room_dungeon_3.yy",},
-    {"name":"inst_63517E6A","path":"rooms/room_dungeon_3/room_dungeon_3.yy",},
     {"name":"inst_7C0A673E","path":"rooms/room_dungeon_3/room_dungeon_3.yy",},
+    {"name":"inst_63517E6A","path":"rooms/room_dungeon_3/room_dungeon_3.yy",},
+    {"name":"inst_925EC72","path":"rooms/room_dungeon_3/room_dungeon_3.yy",},
   ],
   "isDnd":false,
   "layers":[
