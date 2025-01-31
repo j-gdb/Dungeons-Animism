@@ -32,10 +32,10 @@ function process_menu() {
 				case 1:
 					menu_level =  SETTINGS; 
 					break;
-				////Exit
-				//case 2:
-				//	game_end();
-				//	break;
+				//Exit
+				case 2:
+					game_end();
+					break;
 				}
 			break;
 		//Settings menu
